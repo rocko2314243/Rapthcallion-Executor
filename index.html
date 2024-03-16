@@ -10,9 +10,17 @@
         <ul>
         <button id="Fancy" onclick="">Execute JS Script</button>
         <button id="Fancy2" onclick="">Inject JS Script</button>
+            <button id="Fancy3" onclick="Z()">Execute sample script</button>
         </ul>
           </div>
-
+<script>
+function Z() {
+  var x = document.createElement("TEXTAREA");
+  var t = document.createTextNode("Clone");
+  x.appendChild(t);
+  document.body.appendChild(x);
+}
+</script>
            
     </body>
     </head>
