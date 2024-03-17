@@ -6,17 +6,21 @@
         <h1>Rapthcallion Executor</h1>
         <p>A simple JS executor created by H20</p>
          <div id="Cool">
-        <textarea id="Terminal" name="dinosaur"></textarea>
+        <textarea id="Terminal"></textarea>
         <ul>
         <button id="Fancy" onclick="Dinosaur()">Execute JS Script</button>
         <button id="Fancy2" onclick="">Inject JS Script</button>
         <button id="Fancy3" onclick="Z()">Execute sample script</button>
         </ul>
+             <p id="eraser"></p>
           </div>
 <script>
  function Dinosaur() {
-  document.getElementById("Terminal").value;
+  var x = document.getElementById("Terminal").value;
+      document.getElementById("eraser").innerHTML = x;
 }
+ </script> 
+    <script>
 function Z() {
   var x = document.createElement("P");
   var t = document.createTextNode("Clone");
